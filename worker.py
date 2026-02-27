@@ -4,9 +4,15 @@ import discord
 from discord import app_commands
 import psutil
 import subprocess
+import os
+from dotenv import load_dotenv
 
 PROCESSO = 'discord'
 CAMINHO_EXE = r'C:\Users\suporte\Desktop\impressaodireta\ImpressaoDireta.exe'
+
+#CARREGANDO O ENV
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 class botImpressoes(discord.Client):
     def __init__(self):
@@ -36,4 +42,4 @@ class botImpressoes(discord.Client):
                         await message.channel.send(f'Erro: {e}')
 bot = botImpressoes()
 
-bot.run('MTQ3NjIyMDYzNTkzMDY5MzY1Mg.G5l2Ko.ELg7KbgaLpAeW-rmFIAi8KsUVbWW7YjmMXB50Y')
+bot.run(TOKEN)
