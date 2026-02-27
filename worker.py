@@ -37,7 +37,3 @@ class botImpressoes(discord.Client):
 bot = botImpressoes()
 
 bot.run('MTQ3NjIyMDYzNTkzMDY5MzY1Mg.G5l2Ko.ELg7KbgaLpAeW-rmFIAi8KsUVbWW7YjmMXB50Y')
-
-
-
-
