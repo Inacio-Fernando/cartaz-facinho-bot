@@ -2,3 +2,4 @@ bot-imp
 .venv
 .env
 *.log
+processos.txt
